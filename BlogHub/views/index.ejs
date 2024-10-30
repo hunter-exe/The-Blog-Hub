@@ -1,0 +1,22 @@
+<%- include("header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Actions</title>
+</head>
+<body>
+    <div class="box">
+    <h1>Welcome to the Blog Portal</h1>
+    <form action="/blog" method="POST">
+        <button  type="submit" name="action" value="create">Create a Blog</button>
+        <button  type="submit" name="action" value="read">Read Previous Blog</button>
+        <button  type="submit" name="action" value="delete">Delete blog</button>
+    </form>
+    </div>
+</body>
+</html>
+
+<%- include("footer.ejs") %>

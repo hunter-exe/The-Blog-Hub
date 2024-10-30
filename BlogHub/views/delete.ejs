@@ -1,0 +1,23 @@
+<%- include("header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete a Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box">
+    <h1>Delete a Blog by Title</h1>
+    <form action="/delete-blog" method="POST">
+        <label for="title">Enter Blog Title to Delete:</label>
+        <input type="text" id="title" name="title" required>
+        <button  type="submit">Delete</button>
+    </form>
+    <a href="/">Back to Home</a>
+</div>
+</body>
+</html>
+<%- include("footer.ejs") %>
